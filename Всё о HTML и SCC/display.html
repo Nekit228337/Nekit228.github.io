@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>paint.html</title>
+</head>
+<body>
+	<header>
+		<h1>Свойство display</h1>
+		<a class="left" href=""><img src="https://svgsilh.com/png-512/24916.png" alt=""></a>
+		<a class="right" href="style.html"><img src="https://svgsilh.com/png-512/24916.png" alt=""></a>
+	</header>
+		<main>
+		<h2>1.Значение <em>none</em></h2>
+		<p>Самое простое значение, при котором элемент не показывается вообще</p>	
+		<div style="border:1px solid black">
+			Невидимый div(
+		</div>
+		<div style="display:none">Невидимка</div>
+			)стоит внутри скобок
+			<h2>2.Значение <em>block</em></h2>
+			<ul style="font-size: 20px">
+			<li>Блочные элементы, распологаются один за другим,вертикально.</li>
+			  <li>Блок стремится расширится, на всю доступную ширину.</li>
+			  <li>Можно задавать ширину и высоту блока</li>
+			</ul>
+			<p>По-умолчанию свойство display: block имеют следующие теги: h1-h6,p,div,li и др.</p>
+			<div style="border:4px solid black">
+				<div style="background: blue; width:50%; height:80px">Первый</div>
+				<div style="background: yellow; width:75%; height: 95px">Второй</div>
+			</div>
+			<h2>3.Значение <em>inline</em></h2>
+			<ul>
+				<li>Элементы распологаются на той же строке, последовательно </li>
+				<li>Ширина и высота элемента определяется по содержимому, изменить нельзя</li>
+			</ul>
+			<p>По-умолчанию display: inline, имеют следующие теги: a,b,i,span,img и др.</p>
+			<span style="background: white">
+				<span style="background:lime; width: 50%; height: 70px">
+					Ширина и Высота
+				</span>
+				
+				<span style="background:red; width: 50%; height: 75px ">
+					Игнорируется
+				</span>
+			</span>
+			<h2>4.Значение <em>inline-block</em></h2>
+			<p>Элементы с display: inline-block продолжают находится в строке(inline), но при этом могут иметь важные свойства блока(block)</p>
+			<ul><b>Как инлайн-элемент:</b>
+				<li>Располагается в строке</li>
+				<li>Размер устанавливается по содержимому</li>
+			</ul>
+			<ul><b>Как блочный элемент:</b>
+				<li>Элемент всегда прямоугольный</li>
+				<li>Работают свойства width/height , то есть можно задать ширину/высоту </li>
+			</ul>
+			<h2>5.Значение <em>Flex</em></h2>
+			<p>Все элементы, которые находятся внутри блока с display: flex, ведут себя будто им установили display: inline-block</p>
+		</main>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 10px">
+<head>
+	<meta charset="UTF-8">
+	<title>Единицы измерения</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<a class="left" href=""><img src="https://svgsilh.com/png-512/24916.png" alt=""></a>
+		<h1>Единицы измерения</h1>
+		<a class="right" href="style.html"><img src="https://svgsilh.com/png-512/24916.png" alt=""></a>
+	</header>
+	<main>
+		<h2>Исключения, в которых % берётся не от родителя</h2>
+		<!-- ol-нумерованный список -->
+		<!-- ul-маркерованный список -->
+		<ol>
+			<li>
+				<b>margin-left</b>
+				<p>Процент берётся от ШИРИНЫ родительского блока, а не от его margin-left</p>			
+			</li>
+			<li>
+				<b>line-height</b>
+				<p>Процент берётся от ТЕКУЩЕГО РАЗМЕРА ШРИФТА, а не от line-height родителя</p>
+			</li>
+			<li>
+				<b>width/height</b>
+				<p>При position:fixed; процент берётся от ширины/высоты окна, а не ширины/высоты родителя</p>
+			</li>
+		</ol>
+		<h2>Единица измерения размера шрифта em</h2>
+		<div style="font-size: 10px">
+    		Текущий размер шрифта
+    		<div style="font-size: 1.6em">
+    			Первый текст - размер текста 16px 10*1.6
+    			<div style="font-size: 2em">
+    				Второй текст - размер текста 32px 2*16
+    			</div>
+		<h3>Единицы измерения относительно экрана</h3>
+		<div style="font-size: 1em">
+    		vw 1% ширина окна		
+    			</div>
+			<div style="font-size: 1em">
+    				vh 1% высота окна
+    			</div>
+    			<div style="font-size: 1em">
+    				vmin минимальное (vw, vh)
+    			</div>
+    			<div style="font-size: 1em">
+    				vmax максимальное (vw, vh)
+    			</div>
+		<h2>Единица измерения rem: смесь px и em</h2>
+		<ul style="font-size: 40px">
+			<li style="font-size: 1.5rem">На дворе 
+				<ul>	
+					<li style="font-size: 1.5rem">Трава
+						<ul>
+							<li style="font-size:1.5rem">На траве
+								<ul>
+									<li style="font-size:1.5rem">Дрова</li>
+								</ul>
+							</li>
+						</ul>
+					</li>	
+				</ul>
+			</li>		
+		</ul>
+
+	</main>
+</body>
+</html>

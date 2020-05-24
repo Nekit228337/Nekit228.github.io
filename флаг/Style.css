@@ -1,0 +1,60 @@
+* {
+      box-sizing: border-box;
+}
+body {
+	/*Внутренние отступы*/
+	padding: 0;
+	/*Цвет фона*/
+	background-color: green;
+	/*Внешний отступ*/
+	margin: 0;
+}
+
+header {
+	/*Ширина*/
+	width: 70%;
+	/*Высота*/
+	height: 60px;
+	background-color: red;
+	/*Текст по середине*/
+	text-align: center;
+	/*Одиннаковые отступы со всех сторон*/
+	margin: auto;
+	/*Прозиционирование относительное*/
+	position: relative;
+}
+h1 {
+	margin-top: 0;
+}
+table {
+	/*Отступы между ячейками */
+	border-collapse: collapse;
+	border: 3px solid blue;	
+}
+tr,th,td {
+	border: 1px solid violet;
+}
+main {
+	width: 70%;
+	margin: auto;
+	background-color: aqua;
+}
+
+/*Стили для картини, которая внутри тега <a>*/
+a>img {
+	width: 50px;
+}
+/*Обращаемся к элементу по его классу*/
+.right {
+	/*Прозиционирование абсолютное*/
+	position: absolute;
+	right: 5px;
+	top: 15px;
+}
+.left {
+	position: absolute;
+	left: 5px;
+	top: 15px;
+	/*Поворачиваем стрелку*/
+	transform: rotate(180deg);
+}
