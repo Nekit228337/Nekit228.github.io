@@ -41,11 +41,11 @@ main {
 	/*Размытие*/
 	/*filter: blur(4px);
 	/*Яркость*/
-	filter: brightness(200%);
+	/*filter: brightness(200%);
 	/*Контрастность*/
-	filter: contrast(50%);
+	/*filter: contrast(50%);
 	/*Отбрасывание тени*/
-	filter: drop-shadow(30px 30px 10px green);
+	/*filter: drop-shadow(30px 30px 10px green);
 	/*Перевод в чёрно-белое*/
 	/*filter: grayscale(150%);
 	/*Меняет цвета изображения в зависимости от цветового круга*/
@@ -62,6 +62,6 @@ main {
 	/*transform: rotate(-15deg)*/
 	/*Перенос*/
 	/*transform: translate(-200px, -100px)*/
-	transform: scale(0.5) rotate(-15deg) translate(-200px, -100px);*/
-
+	transform: scale(0.5) rotate(-15deg);
+	filter: drop-shadow(30px 30px 10px green) brightness(165%)  contrast(50%)
 }
